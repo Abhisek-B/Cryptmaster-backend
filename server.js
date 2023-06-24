@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const routesUrls = require("./routes/routes");
 const cors = require("cors");
-
+// backend code
 dotenv.config();
 
 mongoose.connect(
