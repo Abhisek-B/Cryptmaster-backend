@@ -19,4 +19,4 @@ mongoose.connect(
 app.use(express.json());
 app.use(cors());
 app.use("/app", routesUrls);
-app.listen(4000, () => console.log("Server is running..."));
+app.listen(process.env.PORT || 5000, () => console.log("Server is running..."));
