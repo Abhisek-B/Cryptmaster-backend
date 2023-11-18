@@ -17,6 +17,8 @@ mongoose.connect(
 
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: 'https://cryptmaster-frontend.vercel.app', 
+}));
 app.use("/app", routesUrls);
 app.listen(process.env.PORT || 5000, () => console.log("Server is running..."));
